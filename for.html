@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+	<title>proyecto final</title>
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+</head>
+<body >
+ <form id="forml" name="formulario" method="post" action="" >
+  	<table width="100%" border="0" align="center">
+
+  		  <td > <label for="textfield">Nombre:</label></td>
+  		  <td  colspan="2"> <input type="text" name="nombre" id="nombre"  maxleng="30" placeholder="escribe tu nombre" required="required" /></td>
+        <tr>
+        	<td> <label for="label">EMAIL:</label></td>
+        	<td colspan="2"><input type="email" name="EMAIL" id="edad" placeholder="pedro@gmail.com" maxleng="2" required="required" /></td>
+        </tr>
+        <tr>
+        	<td> <label for="label2">EDAD ENTRE 18 A 50:</label></td>
+        	<td colspan="2"><input type="text" name="edad" id="edad" placeholder="21" maxleng="2" required="required" /></td>
+        </tr>
+
+        <tr>
+        	<td><label for="select">PAIS</label></td>
+        	<td colspan="2">
+        		<select name="pais" id="pais">
+        			<option>elija un pais</option>
+        			<option value="Bolivia" selected="selected">Bolivia</option>
+        			<option value="Chile">chile</option>
+        			<option value="Peru">Peru</option>
+        		</select>
+        	</td>
+        </tr>
+
+        <tr>
+        	<td>Elije una carrera:</td>
+        	<td colspan="2">
+        		<select name="carrera" id="carrera">
+        			<option>elija una carrera</option>
+        			<option value="redes" selected="selected">redes</option>
+        			<option value="sistemas">Sistemas</option>
+        			<option value="derecho">Derecho</option>
+        		</select>
+        	</td>
+        </tr>
+        <td>&nbsp;</td>
+        <tr>
+        	<td> <label for="textarea">Otras observaciones</label></td>
+        	<td><textarea name="observaciones" cols="40" rows="4" id="observaciones"></textarea></td>
+        </tr>
+
+        <tr>
+        	<td colspan="2" align="center" >
+        		<input type="submit" name="btnEnviar" value="Enviar" id="btnEnviar">
+        	       <input type="reset" name="btnRestablecer" value="Restablecer" id="btnRestablecer">
+        	   </td>
+        </tr>
+  	</table>
+  </form>
+  <script>
+      (function(){
+
+var formulario = document.getElementsByTagName('formulario')[0],
+   elementos= document.formulario.elements;
+    var boton = document.getElementById("btn");
+
+var validarNombre=function(e){
+
+   if(document.formulario.nombre.value == 0){
+
+      alert("completa el campo nombre");
+      e.preventdeDault(e);
+   }
+};
+var validaredad=function(e){
+    if (document.formulario.edad.leng == 0) {
+        alert("Completar edad");
+        e.preventdeDault(e);
+    }
+};
+
+
+ var validar =function(e){  
+
+  validarNombre(e);
+  validaredad(e);
+
+ };
+
+ document.formulario.addEventListener("submit", validar);
+
+})();﻿ 
+  </script>
+	<footer>
+	<p>sergio Ortiz</p>
+	<li><a href="mailto:sergiomata157@gmail.com">Contacto.</a></li>
+	</footer>
+
+</body>
+</html>

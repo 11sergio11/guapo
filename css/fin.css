@@ -1,0 +1,22 @@
+header nav ul{
+	list-style: none;
+}
+header nav ul li a{
+	padding: 15px ;
+	display: block;
+	color: #000000;
+	text-decoration: none;
+	text-align: left;
+}
+header nav ul li a:hover{
+	background: #d5ddde;
+}
+header{
+	 margin:-5px;
+}
+.f1{
+	background: #b0b3b3;
+}
+a{
+	text-align: center;
+}

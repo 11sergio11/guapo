@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+  <form id="forml" name="forml" method="post" action="">
+  	<table width="100%" border="0">
+  		<tr>
+  			<td colspan="2" align="center"> <b>INSCRIOCION DEESTUDIANTES</b></td>
+  		</tr>
+  		  <td width="24%"><label for="textfield">Nombre(*)</label></td>
+  		  <td width="76%" colspan="2"> <input type="text" name="nombre" id="nombre"  maxleng="30" placeholder="escribe tu nombre"></td>
+        <tr>
+        	<td> <label for="label">EMAIL(*):</label></td>
+        	<td colspan="2"><input type="text" name="edad" id="edad" placeholder="pedro@gmail.com" maxleng="2"/></td>
+        </tr>
+        <tr>
+        	<td> <label for="label2">EDAD ENTRE 18 A 50(*):</label></td>
+        	<td colspan="2"><input type="text" name="edad" id="edad" placeholder="21" maxleng="2"/></td>
+        </tr>
+
+        <tr>
+        	<td><label for="select">PAIS</label></td>
+        	<td colspan="2">
+        		<select name="pais" id="pais">
+        			<option>elija un pais(*)</option>
+        			<option value="Bolivia" selected="selected">Bolivia</option>
+        			<option value="Chile">chile</option>
+        			<option value="Peru">Peru</option>
+        		</select>
+        	</td>
+        </tr>
+
+        <tr>
+        	<td>Elije una carrera:(*)</td>
+        	<td colspan="2">
+        		<select name="carrera" id="carrera">
+        			<option>elija una carrera(*)</option>
+        			<option value="redes" selected="selected">redes</option>
+        			<option value="sistemas">chile</option>
+        			<option value="derecho">Peru</option>
+        		</select>
+        	</td>
+        </tr>
+        <td>&nbsp;</td>
+        <tr>
+        	<td> <label for="textarea">Otras observaciones</label></td>
+        	<td><textarea name="observaciones" cols="40" rows="4" id="observaciones"></textarea></td>
+        </tr>
+
+        <tr>
+        	<td colspan="2" align="center" ><input type="sibmit" name="btnEnviar" value="Enviar" id="btnEnviar">
+        	       <input type="reset" name="btnRestablecer" value="Restablecer" id="btnRestablecer">
+        	   </td>
+        </tr>
+  	</table>
+  </form>
+</body>
+</html>
